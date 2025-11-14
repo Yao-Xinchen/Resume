@@ -134,17 +134,6 @@
     \par\kern\topsep
 } % new environment for the header
 
-\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-    \put(
-        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
-        \LenToUnit{\paperheight-1.0 cm}
-    ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
-    }}}%
-  }%
-}%
-
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
 
@@ -184,39 +173,38 @@
         \begin{twocolentry}{
             Sep 2022 – May 2026
         }
-            \textbf{University of Illinois Urbana Champaign}, BS in Computer Engineering
-        \end{twocolentry}
-
-        \begin{twocolentry}{
-            Sep 2022 – May 2026
-        }
-            \textbf{Zhejiang University}, BS in Electrical and Computer Engineering
+            \textbf{Zhejiang University - University of Illinois Urbana-Champaign Institute (ZJUI)}
         \end{twocolentry}
 
         \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item GPA: 3.77/4.0
-            \end{highlights}
-        \end{onecolentry}
 
+        Dual degree program:
+        \begin{highlights}
+            \item Zhejiang University: BS in Electrical and Computer Engineering
+            \item University of Illinois Urbana-Champaign: BS in Computer Engineering
+        \end{highlights}
+        GPA: 3.77/4.0
 
     \section{Technical Skills}
 
         \begin{onecolentry}
-            \textbf{Languages:} Python, C/C++, CUDA, Matlab, Rust
-        \end{onecolentry}
+            \textbf{Programming Languages:} Python, C/C++, CUDA, Matlab, Rust
 
-        \vspace{0.2 cm}
+            \vspace{0.10 cm}
 
-        \begin{onecolentry}
-            \textbf{Tools:} PyTorch, Jax, ROS2, Isaac Lab, Genesis, Mujoco Playground, MoveIt, STM32, SLAM
-        \end{onecolentry}
+            \textbf{Learning Frameworks:} PyTorch, RSL-RL, Jax, Brax
 
-        \vspace{0.2 cm}
+            \vspace{0.10 cm}
 
-        \begin{onecolentry}
-            \textbf{Knowledge:} Deep Learning, Control Theory, Low-Level Communication Protocols, Embedded Systems
+            \textbf{Simulators:} Isaac Lab, Isaac Gym, Genesis, Mujoco MJX, MJ Lab
+        
+            \vspace{0.10 cm}
+
+            \textbf{Low-level Software:} ROS/ROS2, Concurrency, STM32, Communication Protocols, SLAM, OpenCV
+
+            \vspace{0.10 cm}
+
+            \textbf{Control Theory:} PID, LQR, MPC
         \end{onecolentry}
     
     \section{Experience}
@@ -227,67 +215,92 @@
         }
             \href{https://physicalintelligence-lab.github.io/}{\textbf{Physical Intelligence Lab}}, Zhejiang, China
 
-            \vspace{0.10 cm}
+            \vspace{0.05 cm}
+            
+            Zhejiang University - University of Illinois Urbana-Champaign Institute
 
-            Advisor: \href{https://zjui.intl.zju.edu.cn/en/team/teacherinfo/2461}{Hua Chen} 
-            \begin{highlights}
-                \item Research on motivating emergent behaviors in RL.
-                \item Training and deploying policies for bipedal robots and humanoids.
-                \item Research on minimizing sim-to-real gap.
-            \end{highlights}
+            \vspace{0.05 cm}
+
+            Advisor: \href{https://zjui.intl.zju.edu.cn/en/team/teacherinfo/2461}{\textbf{Hua Chen}} 
         \end{twocolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.10 cm}
+
+        \begin{highlights}
+            \item Motivating emergent behaviors in locomotion controllers for bipedal robots and humanoids, using Isaac Lab and Genesis simulation platforms with custom RSL-RL implementations.
+            \item Developing sim-to-sim evaluation pipelines in Mujoco. Deploying trained policies onto various real robots.
+            \item Research on minimizing sim-to-real gap with learned dynamics models and simulation alignment.
+            \item Developing algorithms based on PPO and APG, which can realize higher sample efficiency and stability.
+        \end{highlights}
+
+        \vspace{0.3 cm}
 
         \begin{twocolentry} {
             Undergraduate Researcher \\
             Sep 2024 - Jun 2025
         }
-            \href{https://hdcl.mechanical.illinois.edu}{\textbf{Human Dynamics Controls Lab}}, Illinois, US
+            \href{https://hdcl.mechanical.illinois.edu}{\textbf{Human Dynamics and Controls Lab}}, Illinois, US
 
-            \vspace{0.10 cm}
+            \vspace{0.05 cm}
+            
+            The Grainger College of Engineering, University of Illinois Urbana-Champaign
 
-            Advisor: \href{https://bioengineering.illinois.edu/people/ethw}{Elizabeth Hsiao-Wecksler} 
-            \begin{highlights}
-                \item Enhanced omniwheel simulation.
-                \item New sensor integration to ballbot PURE Gen3.
-                \item Control algorithm optimization for PURE Gen3.
-            \end{highlights}
+            \vspace{0.05 cm}
+
+            Advisor: \href{https://bioengineering.illinois.edu/people/ethw}{\textbf{Elizabeth Hsiao-Wecksler}}
+
         \end{twocolentry}
+
+        \vspace{0.10 cm}
+
+        \begin{highlights}
+            \item Built a dynamics model in Genesis simulator for ballbot PURE Gen3 platform, which aims to accurately simulate the omniwheels while presevering computational efficiency.
+            \item Implemented a learning-based control policies in Genesis to optimize balancing and movement performance and robustness for the PURE Gen3.
+            \item Integrated new force sensors into PURE Gen3 hardware, improving reliablility of existing model-based controller.
+        \end{highlights}
         
-        \vspace{0.2 cm}
+        \vspace{0.3 cm}
 
         \begin{twocolentry}{
-            Contol Group Leader \\
+            Control Group Leader \\
             Jun 2023 - Present
         }
-            \href{https://github.com/Meta-Team/Meta-ROS}{\textbf{RoboMaster Meta Team}}, Zhejiang, China
+            \href{https://github.com/Meta-Team}{\textbf{RoboMaster Meta Team}}, Zhejiang, China
+            
+            \vspace{0.05 cm}
+            
+            Zhejiang University - University of Illinois Urbana-Champaign Institute
 
-            \vspace{0.10 cm}
+            \vspace{0.05 cm}
 
-            Advisor: \href{https://mechse.illinois.edu/people/profile/zjui-cui}{Jiahuang Cui}
-            \begin{highlights}
-                \item Won second prize in \href{https://www.robomaster.com/en-US}{RoboMaster} regional competitions.
-                \item Created an entire ROS2-based control system for multiple robots.
-                \item Responsible for both low-level communication and high-level control design.
-                \item Trained new members in control group.
-                \item Participated in mechanics-control co-design.
-            \end{highlights}
+            Advisor: \href{https://mechse.illinois.edu/people/profile/zjui-cui}{\textbf{Jiahuang Cui}}
+            
         \end{twocolentry}
+
+        \vspace{0.10 cm}
+
+        \begin{highlights}
+            \item Won second prize in \href{https://www.robomaster.com/en-US}{RoboMaster} regional competitions, as the leader of the control group.
+            \item Architected and implemented an ROS2-based distributed control system supporting multiple robots (sentry, hero, infantry, engineer robots) with modular asynchronous communication infrastructure.
+            \item Implemented software and hardware for real-time motor control and sensor data acquisition through their protocols, as well as high-level autonomous navigation and decision-making algorithms.
+            \item Trained and mentored new team members on control theory fundamentals, ROS2 framework, robot hardware architecture, embedded systems programming, and algorithm design.
+            \item Collaborated in mechanics-control co-design iterations to optimize robot kinematics, actuator selection, and sensor placement for improved controllability and performance.
+        \end{highlights}
     
     \section{Projects}
     
         \begin{twocolentry}{
             Second Author
         }
-            \textbf{Where to Learn}
+            \textbf{Where to Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning}
 
         \end{twocolentry}
 
         \vspace{0.10 cm}
+
         \begin{highlights}
-            \item Overview: A new reinforcement learning algorithm based on PPO and APG.
-            \item My contribution: Code implementation, trainging and deployment, and experiments.
+            \item Overview: A novel reinforcement learning algorithm combining Proximal Policy Optimization (PPO) with Adaptive Policy Gradient (APG) mechanisms to dynamically allocate learning focus across state-action spaces.
+            \item My contribution: Implemented the algorithm in PyTorch, conducted training experiments in Isaac Lab and MuJoCo environments, performed hyperparameter tuning, and deployed trained policies on simulated and real robot platforms. Contributed to experimental design and ablation studies.
             \item Website: \href{https://wheretolearn.github.io/}{\textbf{wheretolearn.github.io}}
         \end{highlights}
 
@@ -296,14 +309,14 @@
         \begin{twocolentry}{
             First Author
         }
-            \textbf{Omni WBR}
+            \textbf{Omni WBR: Learning Adaptive Hybrid Wheeled-Biped Robot Omnidirectional Locomotion via Position-Based Incentive}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{highlights}
-            \item Overview: A method to motivate emergent gaits in wheeled bipedal robots for omni-directional walking.
-            \item My contribution: Algorithm design, code implementation, training and deployment, experiments.
-            \item Demonstation available on my website \href{https://yao-xinchen.github.io/projects/omni-wbr/}{\textbf{yao-xinchen.github.io/projects/omni-wbr/}}.
+            \item Overview: A reinforcement learning framework to generate emergent omnidirectional gaits for wheeled bipedal robots, enabling smooth transitions between forward, lateral, and rotational motions without explicit gait planning.
+            \item My contribution: Designed the reward shaping scheme and training curriculum, implemented the simulation environment in Isaac Lab with accurate wheel-ground contact modeling, trained PPO policies with domain randomization, and conducted sim-to-real transfer experiments on a custom wheeled bipedal platform.
+            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/omni-wbr/}{\textbf{yao-xinchen.github.io/projects/omni-wbr/}}.
         \end{highlights}
 
         \vspace{0.2 cm}
@@ -311,14 +324,14 @@
         \begin{twocolentry}{
             Creator, Maintainer
         }
-            \textbf{Meta-Team/Meta-ROS}
+            \textbf{Meta-Team/Meta-ROS: Modular ROS2 Control Framework}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{highlights}
-            \item Overview: An ROS2-Based control system, including sensors, actuators, kinematics.
-            \item Features: Supporting multiple robots, highly modular, dynamically configured.
-            \item \href{https://github.com/Meta-Team/Meta-ROS}{Code availability: \textbf{github.com/Meta-Team/Meta-ROS}}
+            \item Overview: A comprehensive ROS2-based control system architecture encompassing sensor integration, actuator control, forward/inverse kinematics, and autonomous decision-making modules for multi-robot coordination.
+            \item Features: Supports heterogeneous robot platforms with dynamically configurable parameters, modular package structure for easy extension, and real-time performance optimization for competition scenarios.
+            \item Code: \href{https://github.com/Meta-Team/Meta-ROS}{\textbf{github.com/Meta-Team/Meta-ROS}}
         \end{highlights}
 
 \end{document}
