@@ -14,7 +14,7 @@
 \usepackage{tabularx} % for making tables with fixed width columns
 \usepackage{array} % tabularx requires this
 \usepackage[dvipsnames]{xcolor} % for coloring text
-\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
@@ -22,8 +22,9 @@
     pdftitle={Xinchen's CV},
     pdfauthor={Xinchen Yao},
     pdfcreator={LaTeX with RenderCV},
-    colorlinks=true,
-    urlcolor=primaryColor
+    colorlinks=false,
+    urlbordercolor={0 0 0},
+    pdfborderstyle={/S/U/W 0.5}
 ]{hyperref} % for links, metadata and bookmarks
 \usepackage[pscoord]{eso-pic} % for floating text on the page
 \usepackage{calc} % for calculating lengths
@@ -166,11 +167,11 @@
         \vspace{5 pt}
 
         \normalsize
-        \mbox{\href{mailto:yao29@illinois.edu}{yao29@illinois.edu}}%
+        \mbox{yao29@illinois.edu}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\href{mailto:xinchen.22@intl.zju.edu.cn}{xinchen.22@intl.zju.edu.cn}}%
+        \mbox{xinchen.22@intl.zju.edu.cn}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
@@ -191,10 +192,9 @@
 
         Dual degree program:
         \begin{highlights}
-            \item Zhejiang University: BS in Electrical and Computer Engineering
-            \item University of Illinois Urbana-Champaign: BS in Computer Engineering
+            \item Zhejiang University, BS in Electrical and Computer Engineering, GPA: 3.83/4.3
+            \item University of Illinois Urbana-Champaign, BS in Computer Engineering, GPA: 3.77/4.0
         \end{highlights}
-        GPA: 3.77/4.0
 
     \section{Technical Skills}
 
@@ -313,7 +313,7 @@
             \item A novel reinforcement learning algorithm combining Proximal Policy Optimization (PPO) with Adaptive Policy Gradient (APG) mechanisms to realize guided exploration in PPO, enhancing sample efficiency and stability.
             \item Implemented the algorithm in Brax, conducted training experiments in Mujoco MJX environments, performed hyperparameter tuning in benchmarks, and conducted ablation studies.
             \item Developed a new Mujoco MJX environment for our Tron1A biped robot, trained a policy with our new method, and deploy in reality for experiments.
-            \item Website: \href{https://wheretolearn.github.io/}{\textbf{wheretolearn.github.io}}
+            \item Website: \href{https://wheretolearn.github.io/}{wheretolearn.github.io}
         \end{highlights}
 
         \vspace{0.2 cm}
@@ -329,7 +329,7 @@
             \item An engineering method in reinforcement learning to generate emergent omnidirectional gaits for wheeled bipedal robots, enabling smooth adaption to uneven terrains without explicit gait planning.
             \item Designed the task setting to enable adaptive gaits, and implemented training environment in Isaac Lab for our Tron1A wheeled biped robot.
             \item Implement sim-to-real pipelines for the robot. Customized RSL-RL with concurrent teacher-student and applied Lipschitz constrain for better sim-to-real deployment.
-            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/omni-wbr/}{\textbf{yao-xinchen.github.io/projects/omni-wbr/}}.
+            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/omni-wbr/}{yao-xinchen.github.io/projects/omni-wbr}
         \end{highlights}
 
         \vspace{0.2 cm}
@@ -346,7 +346,7 @@
             \item A comprehensive ROS2-based control system architecture encompassing sensor integration, actuator control, forward/inverse kinematics, and autonomous decision-making modules for multi-robot coordination.
             \item Supports heterogeneous robot platforms with dynamically configurable parameters, modular package structure for easy extension, and real-time performance optimization for competition scenarios.
             \item Includes high-level modules like visual recognition, trajectory prediction, lidar-based SLAM, and RL-based locomotion controllers.
-            \item Code: \href{https://github.com/Meta-Team/Meta-ROS}{\textbf{github.com/Meta-Team/Meta-ROS}}
+            \item Code: \href{https://github.com/Meta-Team/Meta-ROS}{github.com/Meta-Team/Meta-ROS}
         \end{highlights}
 
         \vspace{0.2 cm}
@@ -360,9 +360,10 @@
         \vspace{0.1 cm}
 
         \begin{highlights}
-            \item Co-designed a custom Wheeled Biped Robot with 4 Degrees of Freedom and built a URDF model for it.
-            \item Implemented a training environment in Isaac Gym, and trained a policy with custom RSL-RL.
-            \item Developed a low-level control system for the robot with ROS2, and Deployed the trained policy onto it.
+            \item Co-designed a custom wheeled biped robot with 4 degrees of freedom with a closed chain structure.
+            \item Implemented a training environment in Isaac Gym and trained a policy with custom RSL-RL.
+            \item Developed a low-level control system for the robot with ROS2 to deploy the trained policy.
+            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/wheeled-biped}{yao-xinchen.github.io/projects/wheeled-biped}
         \end{highlights}
 
 
@@ -376,7 +377,8 @@
 
         \begin{highlights}
             \item Implemented device drivers (UART, VirtIO block), filesystem I/O, virtual memory, process management, and preemptive multitasking with system calls for concurrent user program execution.
-            \item Designed and Implemented a zsh-style interactive shell that can spawn child processes and restore interface upon completion.
+            \item Designed and Implemented a zsh-style shell that can spawn processes and restore interface upon completion.
+            \item Composed a tutorial on my workflow setup for this coursework: \href{https://github.com/Yao-Xinchen/ECE391-Workflow}{github.com/Yao-Xinchen/ECE391-Workflow}
         \end{highlights}
 
         \vspace{0.1 cm}
@@ -403,6 +405,6 @@
         \begin{highlights}
             \item Implemented Simultaneous Localization and Mapping (SLAM) with Fast-LIO, and path recognition with ENet.
             \item Designed and implemented a autonomous parking system with predefined diagonal and parallel maneuvers.
-            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/auto-parking/}{\textbf{yao-xinchen.github.io/projects/auto-parking}}
+            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/auto-parking/}{yao-xinchen.github.io/projects/auto-parking}
         \end{highlights}
 \end{document}
