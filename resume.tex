@@ -182,7 +182,7 @@
 
     \section{Education}
 
-        Dual degree program in:
+        Dual degree program in Zhejiang University - University of Illinois Urbana-Champaign Institute (ZJUI):
 
         \vspace{0.1cm}
 
@@ -205,24 +205,28 @@
     \section{Technical Skills}
 
         \begin{onecolentry}
-            \textbf{Programming Languages:} Python, C/C++, CUDA, Matlab, Rust, RISC-V Assembly
+            \textbf{Programming:} Python, C/C++, CUDA, Matlab, Rust
 
             \vspace{0.10 cm}
 
-            \textbf{Learning Frameworks:} PyTorch, RSL-RL, Jax, Brax
+            \textbf{Machine Learning:} PyTorch, Jax, Reinforcement Learning, Deep Learning
 
             \vspace{0.10 cm}
 
-            \textbf{Simulators:} Isaac Lab, Isaac Gym, Genesis, Mujoco MJX, MJ Lab
+            \textbf{Robotics:} Robot Simulators, Control Theory, ROS/ROS2, Computer Vision, SLAM
 
             \vspace{0.10 cm}
 
-            \textbf{Control Algorithms:} PID, LQR, MPC
-
-            \vspace{0.10 cm}
-
-            \textbf{Low-level Software:} ROS/ROS2, Concurrency, STM32, Communication Protocols, SLAM, OpenCV
+            \textbf{Systems:} Linux, Embedded Systems, Parallel Computing
         \end{onecolentry}
+
+    \section{Awards and Honors}
+
+        \begin{highlights}
+            \item Outstanding Student in Academic Achievement, ZJU-UIUC Institute (2024 - 2025)
+            \item Zhejiang University Scholarship (2024 - 2025)
+            \item Second Prize in RoboMaster University League Competition (2023, 2024)
+        \end{highlights}
     
     \section{Experience}
 
@@ -244,10 +248,10 @@
         \vspace{0.10 cm}
 
         \begin{highlights}
-            \item Eliciting emergent behaviors in locomotion controllers for bipedal robots and humanoids, using Isaac Lab and Genesis simulation platforms with custom RSL-RL implementations.
-            \item Developing sim-to-sim evaluation pipelines in Mujoco. Deploying trained policies onto various real robots.
-            \item Research on minimizing sim-to-real gap with learned dynamics models and simulation alignment.
-            \item Developing algorithms based on PPO and APG, which can achieve higher sample efficiency and stability.
+            \item Developing locomotion controllers for bipedal robots and humanoids using reinforcement learning, achieving emergent behaviors that adapt to various terrains and conditions.
+            \item Building evaluation pipelines to test trained robot policies across multiple simulation environments and deploying them to physical robots.
+            \item Researching methods to reduce the performance gap between simulated and real-world robot operation through learned dynamics models.
+            \item Improving reinforcement learning algorithms to achieve better training efficiency and performance stability.
         \end{highlights}
 
         \vspace{0.3 cm}
@@ -271,9 +275,9 @@
         \vspace{0.10 cm}
 
         \begin{highlights}
-            \item Developed a dynamics model in Genesis simulator for ballbot PURE Gen3 platform, which aims to accurately simulate the omniwheels while preserving computational efficiency.
-            \item Implemented a learning-based control policies in Genesis to optimize balancing and movement performance and robustness for the PURE Gen3.
-            \item Integrated new force sensors into PURE Gen3 hardware, improving state estimation and control reliability of existing model-based controller.
+            \item Developed a dynamics model for a self-balancing ballbot platform, simulating omniwheel behavior while maintaining computational efficiency.
+            \item Implemented learning-based control to optimize balancing and movement performance and robustness.
+            \item Integrated new force sensors into robot hardware, improving state estimation and control reliability.
         \end{highlights}
         
         \vspace{0.3 cm}
@@ -297,11 +301,11 @@
         \vspace{0.10 cm}
 
         \begin{highlights}
-            \item Won second prize in \href{https://www.robomaster.com/en-US}{RoboMaster} regional competitions, as the leader of the control group.
-            \item Architected and implemented an ROS2-based distributed control system supporting multiple robots (sentry, hero, infantry, engineer robots) with modular asynchronous communication infrastructure.
-            \item Developed software and hardware interfaces for real-time motor control and sensor data acquisition through their protocols, as well as high-level autonomous navigation and decision-making algorithms.
-            \item Trained and mentored new team members on control theory fundamentals, ROS2 framework, robot hardware architecture, embedded systems programming, and algorithm design.
-            \item Collaborated in mechanics-control co-design iterations to optimize robot kinematics, actuator selection, and sensor placement for improved controllability and performance.
+            \item Led control group to win second prize in RoboMaster regional competition, managing a team developing software for multiple competitive robots.
+            \item Designed and implemented a distributed control system supporting real-time coordination for multiple robots with modular architecture.
+            \item Developed software for motor control, sensor integration, autonomous navigation, and decision-making algorithms.
+            \item Trained and mentored new team members on control theory, robot software development, and algorithm design.
+            \item Collaborated with mechanical team to optimize robot design for improved controllability and performance.
         \end{highlights}
     
     \section{Projects}
@@ -316,9 +320,9 @@
         \vspace{0.10 cm}
 
         \begin{highlights}
-            \item A novel reinforcement learning algorithm combining Proximal Policy Optimization (PPO) with Adaptive Policy Gradient (APG) mechanisms to realize guided exploration in PPO, enhancing sample efficiency and stability.
-            \item Implemented the algorithm in Brax, conducted training experiments in Mujoco MJX environments, performed hyperparameter tuning in benchmarks, and conducted ablation studies.
-            \item Developed a new Mujoco MJX environment for our Tron1A biped robot, trained a policy with our new method, and deploy in reality for experiments.
+            \item Implemented a novel reinforcement learning algorithm that enhances exploration efficiency and training stability for robotic control.
+            \item Evaluated the algorithm across multiple benchmark environments with comprehensive hyperparameter tuning and ablation studies.
+            \item Successfully trained and deployed a walking policy on a physical biped robot for real-world validation.
             \item Website: \href{https://wheretolearn.github.io/}{wheretolearn.github.io}
         \end{highlights}
 
@@ -332,9 +336,8 @@
 
         \vspace{0.10 cm}
         \begin{highlights}
-            \item An engineering method in reinforcement learning to generate emergent omnidirectional gaits for wheeled bipedal robots, enabling smooth adaption to uneven terrains without explicit gait planning.
-            \item Designed the task setting to enable adaptive gaits, and implemented training environment in Isaac Lab for our Tron1A wheeled biped robot.
-            \item Implement sim-to-real pipelines for the robot. Customized RSL-RL with concurrent teacher-student and applied Lipschitz constrain for better sim-to-real deployment.
+            \item Developed a reinforcement learning method to generate adaptive omnidirectional gaits for wheeled bipedal robots, enabling smooth movement on uneven terrains without explicit gait planning.
+            \item Implemented a training and deploying pipeline to evaluate the method on physical robot.
             \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/omni-wbr/}{yao-xinchen.github.io/projects/omni-wbr}
         \end{highlights}
 
@@ -349,9 +352,9 @@
         \vspace{0.10 cm}
 
         \begin{highlights}
-            \item A comprehensive ROS2-based control system architecture encompassing sensor integration, actuator control, forward/inverse kinematics, and autonomous decision-making modules for multi-robot coordination.
-            \item Supports heterogeneous robot platforms with dynamically configurable parameters, modular package structure for easy extension, and real-time performance optimization for competition scenarios.
-            \item Includes high-level modules like visual recognition, trajectory prediction, lidar-based SLAM, and RL-based locomotion controllers.
+            \item Created a comprehensive robot control system supporting multiple competitive robots with sensor integration, motion control, and autonomous coordination.
+            \item Designed modular architecture enabling easy extension and real-time performance for competition scenarios.
+            \item Integrated advanced capabilities including visual recognition, trajectory prediction, localization, and learning-based controllers.
             \item Code: \href{https://github.com/Meta-Team/Meta-ROS}{github.com/Meta-Team/Meta-ROS}
         \end{highlights}
 
@@ -366,9 +369,8 @@
         \vspace{0.1 cm}
 
         \begin{highlights}
-            \item Co-designed a custom wheeled biped robot with 4 degrees of freedom with a closed chain structure.
-            \item Implemented a training environment in Isaac Gym and trained a policy with custom RSL-RL.
-            \item Developed a low-level control system for the robot with ROS2 to deploy the trained policy.
+            \item Co-designed and built a custom wheeled biped robot with 4 degrees of freedom and closed chain structure.
+            \item Trained a reinforcement learning-based locomotion controller and deployed it on the physical robot.
             \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/wheeled-biped}{yao-xinchen.github.io/projects/wheeled-biped}
         \end{highlights}
 
@@ -382,9 +384,9 @@
         \end{twocolentrylong}
 
         \begin{highlights}
-            \item Implemented device drivers (UART, VirtIO block), filesystem I/O, virtual memory, process management, and preemptive multitasking with system calls for concurrent user program execution.
-            \item Designed and Implemented a zsh-style shell that can spawn processes and restore interface upon completion.
-            \item Composed a tutorial on my workflow setup for this coursework: \href{https://github.com/Yao-Xinchen/ECE391-Workflow}{github.com/Yao-Xinchen/ECE391-Workflow}
+            \item Implemented core operating system components including device drivers, filesystem, virtual memory, process management, and multitasking capabilities.
+            \item Designed and implemented a Unix-style shell with process spawning and management.
+            \item Composed a tutorial on workflow setup: \href{https://github.com/Yao-Xinchen/ECE391-Workflow}{github.com/Yao-Xinchen/ECE391-Workflow}
         \end{highlights}
 
         \vspace{0.1 cm}
@@ -396,8 +398,8 @@
         \end{twocolentrylong}
 
         \begin{highlights}
-            \item Implemented and optimized CUDA-based CNN inference, achieving over 40\% performance improvement.
-            \item Applied advanced techniques including tensor cores, CUDA stream, Joint Register and Shared Memory Tiling, and cuBLAS for higher memory efficiency.
+            \item Implemented and optimized neural network inference using GPU parallel computing, achieving over 40\% performance improvement.
+            \item Applied advanced optimization techniques including tensor cores, memory tiling, and specialized libraries for efficient computation.
         \end{highlights}
 
         \vspace{0.1 cm}
@@ -409,8 +411,8 @@
         \end{twocolentrylong}
 
         \begin{highlights}
-            \item Implemented Simultaneous Localization and Mapping (SLAM) with Fast-LIO, and path recognition with ENet.
-            \item Designed and implemented a autonomous parking system with predefined diagonal and parallel maneuvers.
+            \item Implemented localization and mapping system, and visual path recognition using deep learning.
+            \item Designed and implemented autonomous parking system with diagonal and parallel parking maneuvers.
             \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/auto-parking/}{yao-xinchen.github.io/projects/auto-parking}
         \end{highlights}
 \end{document}
