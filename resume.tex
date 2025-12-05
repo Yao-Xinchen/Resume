@@ -32,9 +32,11 @@
 \usepackage{lastpage} % for getting the total number of pages
 \usepackage{changepage} % for one column entries (adjustwidth environment)
 \usepackage{paracol} % for two and three column entries
+\footnotelayout{m} % make footnotes appear at bottom of page instead of column
 \usepackage{ifthen} % for conditional statements
 \usepackage{needspace} % for avoiding page brake right after the section title
 \usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{footnote}
 
 % Ensure that generate pdf is machine readable/ATS parsable:
 \ifPDFTeX
@@ -175,7 +177,7 @@
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\href{https://yao-xinchen.github.io}{\textbf{yao-xinchen.github.io}}}%
+        \mbox{\href{https://yao-xinchen.github.io}{\textbf{https://yao-xinchen.github.io}}}%
     \end{header}
 
     \vspace{5 pt - 0.3 cm}
@@ -202,24 +204,6 @@
             BS in Electronic and Computer Engineering, GPA: 3.83/4.3
         \end{twocolentry}
 
-    \section{Technical Skills}
-
-        \begin{onecolentry}
-            \textbf{Programming:} Python, C/C++, CUDA, Matlab, Rust
-
-            \vspace{0.10 cm}
-
-            \textbf{Machine Learning:} PyTorch, Jax, Reinforcement Learning, Generative Models
-
-            \vspace{0.10 cm}
-
-            \textbf{Robotics:} Robot Simulators, Control Theory, ROS/ROS2, Computer Vision, SLAM
-
-            \vspace{0.10 cm}
-
-            \textbf{Systems:} Linux, Embedded Systems, Parallel Computing
-        \end{onecolentry}
-
     \section{Awards and Honors}
 
         \begin{highlights}
@@ -234,7 +218,7 @@
             Undergraduate Researcher \\
             Jul 2025 - Present
         }
-            \href{https://physicalintelligence-lab.github.io/}{\textbf{Physical Intelligence Lab}}, Zhejiang, China
+            \textbf{Physical Intelligence Lab}\footnote{https://physicalintelligence-lab.github.io/}, Zhejiang, China
 
             \vspace{0.05 cm}
             
@@ -242,13 +226,13 @@
 
             \vspace{0.05 cm}
 
-            Advisor: \href{https://zjui.intl.zju.edu.cn/en/team/teacherinfo/2461}{\textbf{Prof. Hua Chen}} 
+            Advisor: \textbf{Prof. Hua Chen}\footnote{https://zjui.intl.zju.edu.cn/en/team/teacherinfo/2461}
         \end{twocolentry}
 
         \vspace{0.10 cm}
 
         \begin{highlights}
-            \item Developing locomotion controllers for bipedal robots and humanoids using reinforcement learning, achieving emergent behaviors that adapt to various terrains and conditions.
+            \item Developing locomotion controllers for bipedal robots and humanoids using reinforcement learning.
             \item Building evaluation pipelines to test trained robot policies across multiple simulation environments and deploying them to physical robots.
             \item Researching methods to reduce the performance gap between simulated and real-world robot operation through learned dynamics models.
             \item Improving reinforcement learning algorithms to achieve better training efficiency and performance stability.
@@ -260,7 +244,7 @@
             Undergraduate Researcher \\
             Sep 2024 - Jun 2025
         }
-            \href{https://hdcl.mechanical.illinois.edu}{\textbf{Human Dynamics and Controls Lab}}, Illinois, US
+            \textbf{Human Dynamics and Controls Lab}\footnote{https://hdcl.mechanical.illinois.edu}, Illinois, US
 
             \vspace{0.05 cm}
             
@@ -268,7 +252,7 @@
 
             \vspace{0.05 cm}
 
-            Advisor: \href{https://bioengineering.illinois.edu/people/ethw}{\textbf{Prof. Elizabeth Hsiao-Wecksler}}
+            Advisor: \textbf{Prof. Elizabeth Hsiao-Wecksler}\footnote{https://bioengineering.illinois.edu/people/ethw}
 
         \end{twocolentry}
 
@@ -286,7 +270,7 @@
             Control Group Leader \\
             Jun 2023 - Present
         }
-            \href{https://github.com/Meta-Team}{\textbf{RoboMaster Meta Team}}, Zhejiang, China
+            \textbf{RoboMaster Meta Team}\footnote{https://github.com/Meta-Team}, Zhejiang, China
             
             \vspace{0.05 cm}
             
@@ -294,7 +278,7 @@
 
             \vspace{0.05 cm}
 
-            Advisor: \href{https://mechse.illinois.edu/people/profile/zjui-cui}{\textbf{Prof. Jiahuang Cui}}
+            Advisor: \textbf{Prof. Jiahuang Cui}\footnote{https://mechse.illinois.edu/people/profile/zjui-cui}
             
         \end{twocolentry}
 
@@ -303,17 +287,35 @@
         \begin{highlights}
             \item Led control group to win second prize in RoboMaster regional competition, managing a team developing software for multiple competitive robots.
             \item Designed and implemented a distributed control system supporting real-time coordination for multiple robots with modular architecture.
-            \item Developed software for motor control, sensor integration, autonomous navigation, and decision-making algorithms.
+            \item Developed software for motor control, sensor integration, autonomous navigation, and decision algorithms.
             \item Trained and mentored new team members on control theory, robot software development, and algorithm design.
             \item Collaborated with mechanical team to optimize robot design for improved controllability and performance.
         \end{highlights}
+
+    \section{Technical Skills}
+
+        \begin{onecolentry}
+            \textbf{Programming:} Python, C/C++, CUDA, Matlab, Rust
+
+            \vspace{0.10 cm}
+
+            \textbf{Machine Learning:} PyTorch, Jax, Reinforcement Learning, Generative Models
+
+            \vspace{0.10 cm}
+
+            \textbf{Robotics:} Robot Simulators, Control Theory, ROS/ROS2, Computer Vision, SLAM
+
+            \vspace{0.10 cm}
+
+            \textbf{Systems:} Linux, Embedded Systems, Parallel Computing
+        \end{onecolentry}
     
     \section{Projects}
     
         \begin{twocolentry}{
             Second Author
         }
-            \textbf{Where to Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning}
+            \textbf{Where to Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning} (under review by IEEE RA-L)
 
         \end{twocolentry}
 
@@ -323,7 +325,7 @@
             \item Implemented a novel reinforcement learning algorithm that enhances exploration efficiency and training stability for robotic control.
             \item Evaluated the algorithm across multiple benchmark environments with comprehensive hyperparameter tuning and ablation studies.
             \item Successfully trained and deployed a walking policy on a physical biped robot for real-world validation.
-            \item Website: \href{https://wheretolearn.github.io/}{wheretolearn.github.io}
+            \item Website: \href{https://wheretolearn.github.io/}{https://wheretolearn.github.io}
         \end{highlights}
 
         \vspace{0.2 cm}
@@ -331,14 +333,14 @@
         \begin{twocolentry}{
             First Author
         }
-            \textbf{Omni WBR: Learning Adaptive Hybrid Wheeled-Biped Robot Omnidirectional Locomotion via Position-Based Incentive}
+            \textbf{Omni WBR: Learning Adaptive Hybrid Wheeled-Biped Robot Omnidirectional Locomotion via Position-Based Incentive} (in progress)
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{highlights}
             \item Developed a reinforcement learning method to generate adaptive omnidirectional gaits for wheeled bipedal robots, enabling smooth movement on uneven terrains without explicit gait planning.
             \item Implemented a training and deploying pipeline to evaluate the method on physical robot.
-            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/omni-wbr/}{yao-xinchen.github.io/projects/omni-wbr}
+            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/omni-wbr/}{https://yao-xinchen.github.io/projects/omni-wbr}
         \end{highlights}
 
         \vspace{0.2 cm}
@@ -355,7 +357,7 @@
             \item Created a comprehensive robot control system supporting multiple competitive robots with sensor integration, motion control, and autonomous coordination.
             \item Designed modular architecture enabling easy extension and real-time performance for competition scenarios.
             \item Integrated advanced capabilities including visual recognition, trajectory prediction, localization, and learning-based controllers.
-            \item Code: \href{https://github.com/Meta-Team/Meta-ROS}{github.com/Meta-Team/Meta-ROS}
+            \item Code: \href{https://github.com/Meta-Team/Meta-ROS}{https://github.com/Meta-Team/Meta-ROS}
         \end{highlights}
 
         \vspace{0.2 cm}
@@ -371,7 +373,7 @@
         \begin{highlights}
             \item Co-designed and built a custom wheeled biped robot with 4 degrees of freedom and closed chain structure.
             \item Trained a reinforcement learning-based locomotion controller and deployed it on the physical robot.
-            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/wheeled-biped}{yao-xinchen.github.io/projects/wheeled-biped}
+            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/wheeled-biped}{https://yao-xinchen.github.io/projects/wheeled-biped}
         \end{highlights}
 
 
@@ -386,20 +388,7 @@
         \begin{highlights}
             \item Implemented core operating system components including device drivers, filesystem, virtual memory, process management, and multitasking capabilities.
             \item Designed and implemented a Unix-style shell with process spawning and management.
-            \item Composed a tutorial on workflow setup: \href{https://github.com/Yao-Xinchen/ECE391-Workflow}{github.com/Yao-Xinchen/ECE391-Workflow}
-        \end{highlights}
-
-        \vspace{0.1 cm}
-
-        \begin{twocolentrylong}{
-            ECE408 Applied Parallel Programming
-        }
-            \textbf{Convolution Neural Network Implementation in CUDA}
-        \end{twocolentrylong}
-
-        \begin{highlights}
-            \item Implemented and optimized neural network inference using GPU parallel computing, achieving over 40\% performance improvement.
-            \item Applied advanced optimization techniques including tensor cores, memory tiling, and specialized libraries for efficient computation.
+            \item Composed a tutorial on workflow setup: \href{https://github.com/Yao-Xinchen/ECE391-Workflow}{https://github.com/Yao-Xinchen/ECE391-Workflow}
         \end{highlights}
 
         \vspace{0.1 cm}
@@ -413,6 +402,6 @@
         \begin{highlights}
             \item Implemented localization and mapping system, and visual path recognition using deep learning.
             \item Designed and implemented autonomous parking system with diagonal and parallel parking maneuvers.
-            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/auto-parking/}{yao-xinchen.github.io/projects/auto-parking}
+            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/auto-parking/}{https://yao-xinchen.github.io/projects/auto-parking}
         \end{highlights}
 \end{document}
