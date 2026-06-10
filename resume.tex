@@ -16,7 +16,7 @@
 \usepackage[dvipsnames]{xcolor} % for coloring text
 \definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
 \usepackage{enumitem} % for customizing lists
-\usepackage{fontawesome5} % for using icons
+% \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
 \usepackage[
     pdftitle={Xinchen's CV},
@@ -309,11 +309,28 @@
         \end{highlights}
     
     \section{Projects}
-    
+
+        \begin{twocolentry}{
+            First Author
+        }
+            \textbf{World Translation: Minimizing Sim-to-Real Gap with Backward Dynamics Extraction and Unpaired Domain Translation (Under review at RSS 2026)}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+
+        \begin{highlights}
+            \item Identified complementary strengths of simulators (modeling transient physics) and learned models (capturing domain characteristics), and combined them through a unified framework.
+            \item Proposed backward dynamics extraction to infer effects of hidden variables (unobservable factors like contacts, collisions, and disturbances) from transition outcomes, eliminating temporal smoothness assumptions of conventional learned dynamics models that fail under discontinuous changes.
+            \item Reformulated sim-to-real transfer as unpaired domain translation, preserving hidden variable semantics while correcting domain mismatch without paired supervision.
+            \item Demonstrated improved dynamics modeling on humanoid, quadruped, and manipulator platforms. Validated on downstream policy performance boost on real robots.
+        \end{highlights}
+
+        \vspace{0.2 cm}
+
         \begin{twocolentry}{
             Second Author
         }
-            \textbf{Where to Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning}
+            \textbf{Where to Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning (Under review at RA-L)}
 
         \end{twocolentry}
 
@@ -369,50 +386,10 @@
         \vspace{0.1 cm}
 
         \begin{highlights}
-            \item Co-designed and built a custom wheeled biped robot with 4 degrees of freedom and closed chain structure.
+            \item Co-designed and built a custom wheeled biped robot with 4 degrees of freedom and closed chain structure, including low-level control system on embedded platform.
             \item Trained a reinforcement learning-based locomotion controller and deployed it on the physical robot.
             \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/wheeled-biped}{yao-xinchen.github.io/projects/wheeled-biped}
         \end{highlights}
 
 
-    \section{Course Projects}
-
-        \begin{twocolentrylong}{
-            ECE391 Computer Systems
-        }
-            \textbf{Unix-Like RSIC-V Operating System, Including Kernel and Shell}
-        \end{twocolentrylong}
-
-        \begin{highlights}
-            \item Implemented core operating system components including device drivers, filesystem, virtual memory, process management, and multitasking capabilities.
-            \item Designed and implemented a Unix-style shell with process spawning and management.
-            \item Composed a tutorial on workflow setup: \href{https://github.com/Yao-Xinchen/ECE391-Workflow}{github.com/Yao-Xinchen/ECE391-Workflow}
-        \end{highlights}
-
-        \vspace{0.1 cm}
-
-        \begin{twocolentrylong}{
-            ECE408 Applied Parallel Programming
-        }
-            \textbf{Convolution Neural Network Implementation in CUDA}
-        \end{twocolentrylong}
-
-        \begin{highlights}
-            \item Implemented and optimized neural network inference using GPU parallel computing, achieving over 40\% performance improvement.
-            \item Applied advanced optimization techniques including tensor cores, memory tiling, and specialized libraries for efficient computation.
-        \end{highlights}
-
-        \vspace{0.1 cm}
-
-        \begin{twocolentrylong}{
-            ECE484 Safe Autonomy
-        }
-            \textbf{Autonomous Diagonal and Parallel Parking}
-        \end{twocolentrylong}
-
-        \begin{highlights}
-            \item Implemented localization and mapping system, and visual path recognition using deep learning.
-            \item Designed and implemented autonomous parking system with diagonal and parallel parking maneuvers.
-            \item Demonstration available on my website: \href{https://yao-xinchen.github.io/projects/auto-parking/}{yao-xinchen.github.io/projects/auto-parking}
-        \end{highlights}
 \end{document}
